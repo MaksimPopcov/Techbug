@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>234567</title>
+
+<script type="text/javascript">
+//----------------------------------------2. Working with variables
+(function () {
+    var admin = 'root';
+        name = admin;
+        console.log(name);
+        alert(name);
+})();
+
+
+//----------------------------------------3. Questions about the type conversion
+
+
+(function () {
+    console.log("" + 1 + 0);
+    console.log("" -1 + 0);
+    console.log(true + false);
+    console.log(6 / "3");
+    console.log("2" * "3");
+    console.log(4 + 5 + "px");
+    console.log("4" - 2);
+    console.log("4px" - 2);
+    console.log(7 / 0);
+    console.log("-9\n" + 5);
+    console.log("-9\n" - 5);
+    console.log(5 && 2);
+    console.log(2 && 5);
+    console.log(5 || 0);
+    console.log(0 || 5);
+    console.log(null + 1);
+    console.log(undefined + 1);
+    console.log(null == "\n0\n");
+    console.log(+null == +"\n0\n");
+
+})();
+
+//----------------------------------------4. Is "else" required?
+
+//result is the same
+
+
+//----------------------------------------5. Hello World for functions
+
+function math(a,b) {
+
+    var c =  Math.min(2, 2) == 2;
+    console.log(c);
+
+    var d = Math.min(3, -1) == -1;
+    console.log(d);
+
+    var e = Math.min(1, 3) == 3;
+    console.log(e);
+
+
+};
+
+math();
+
+
+//----------------------------------------6. Prime Number 
+
+
+function isPrime(num) {
+  for(var i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num !== 1;
+};
+
+isPrime();
+console.log(isPrime(5));
+
+
+
+function isPrime(number) {
+    var start = 2;
+    while (start <= Math.sqrt(number)) {
+        if (number % start++ < 1) return false;
+    }
+    return number > 1;
+}
+isPrime();
+
+console.log(isPrime(6));
+
+
+//----------------------------------------7. Last value of the loop
+
+function forLoop() {
+    var i = 3;
+
+    while (i) {
+      console.log(i--);
+    }
+
+};
+
+forLoop();
+
+//the last value will be 1 as its the last digit that counts down 
+// i-- will -1 every time it goes in loop till the end 
+
+
+
+</script>
+  </head>
+  <body>
+    <!-- page content -->
+	<div id="container"></div>
+
+  </body>
+</html>
