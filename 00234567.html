@@ -92,7 +92,7 @@ console.log(isPrime(6));
 
 //----------------------------------------7. Last value of the loop
 
-function forLoop() {
+function loop() {
     var i = 3;
 
     while (i) {
@@ -101,11 +101,24 @@ function forLoop() {
 
 };
 
-forLoop();
+loop();
 
 //the last value will be 1 as its the last digit that counts down 
 // i-- will -1 every time it goes in loop till the end 
 
+
+//----------------------------------------8. Even or Odd
+
+for (var counter = 1; counter < 16; counter++) {
+
+    if (counter % 2 == 0) {
+      console.log(counter + " is odd");  
+    } else {
+
+      console.log(counter + " is even");  
+    }
+
+}
 
 
 </script>
