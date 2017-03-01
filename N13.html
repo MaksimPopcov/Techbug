@@ -7,29 +7,22 @@
 <script type="text/javascript">
 
 //------------------------------------------------
-function countSalariesSum (obj) {
-	var countSalariesSum = 0;
-	console.log("what is countSalariesSum " + counterSalariesSum);
-	for ( var elem in obj ) {
-		if (obj.hasOwnProperty ( elem ) ) {
-			countSalariesSum += parseFloat ( obj[elem] );
-			console.log("if what is countSalariesSum " + counterSalariesSum);
-		}
-	}
-
-}
 
 var salaries = {
   "Andrew": 10000,
   "Peter": 12300,
   "John": 14500
 };
-console.log(salaries);
-total = countSalariesSum(salaries); // 36800
-console.log(total);
 
 
-//-----------------UNFINISHED-------------------------------
+var sum = 0;
+
+for (var key in salaries) {
+    sum += salaries[key];
+};
+
+
+//------------------------------------------------
 
 </script>
   </head>
